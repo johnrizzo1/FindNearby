@@ -568,7 +568,7 @@
     */
     function initializeMap(){
         //Set the div
-        map= new GMap2(document.getElementById('{!$Component.map_div}'));
+        map= new google.maps.Map(document.getElementById('{!$Component.map_div}'));
        
        //Set the Icon Image
        // AIcon.image= baseUrl+'blue_MarkerA.png';
@@ -802,7 +802,7 @@
  */
 (function () {
   /*jslint browser:true */
-  /*global GMap2,GMarker,GEvent */
+  /*global google.maps.Map,GMarker,GEvent */
   var defaultStyle = {
     tabBar: {
       background: '#F4F4F4 none repeat scroll 0 0',
@@ -1015,7 +1015,7 @@
     }
   };
  
-  GMap2.prototype.openMaxContentTabs = function (latlng, minNode, sumNode, tabs, opt_maxOptions) {
+  google.maps.Map.prototype.openMaxContentTabs = function (latlng, minNode, sumNode, tabs, opt_maxOptions) {
     var max = this.getTabbedMaxContent();
     var opts = opt_maxOptions || {};
     max.initialize_(sumNode, tabs, opts);
@@ -1038,11 +1038,11 @@
       });
     }
   };
-  GMap2.prototype.openMaxContentTabsHtml = function (latlng, html, summary, tabs, opt_maxOptions) {
+  google.maps.Map.prototype.openMaxContentTabsHtml = function (latlng, html, summary, tabs, opt_maxOptions) {
     this.openMaxContentTabs(latlng, createEl('div', null, html), createEl('div', null, summary), tabs, opt_maxOptions);
   };
 
-  GMap2.prototype.getTabbedMaxContent = function () {
+  google.maps.Map.prototype.getTabbedMaxContent = function () {
     this.maxContent_  = this.maxContent_ || new TabbedMaxContent(this.getInfoWindow());
     return this.maxContent_;
   };
