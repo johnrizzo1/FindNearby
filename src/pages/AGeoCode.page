@@ -26,7 +26,7 @@
         var geocoder = null;
         var map = null;
         map = new google.maps.Map(document.getElementById('{!$Component.map_div}'));
-        geocoder = new GClientGeocoder();
+        geocoder = new google.maps.Geocoder();
         map.setCenter(new GLatLng(37.4419, -122.1419), 1);
         
         
