@@ -25,6 +25,7 @@
         var map = null;
         map = new google.maps.Map(document.getElementById('{!$Component.map_div}'));
         geocoder = new google.maps.Geocoder();
+       
         map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 1);
         
         
@@ -32,9 +33,11 @@
         if('{!continue}' == 'T'){
          if (geocoder) {
             setTimeout("1+1",650);
-            geocoder.getLocations( '{! JSENCODE(Address) }',
-                function(response) {
-                    map.clearOverlays();
+            geocoder.geocode( {address: '{! JSENCODE(Address) }'},
+                function(response, status) {
+                    
+                    
+                    /*map.clearOverlays();
                     
                    //if it was located, with a good accuracy
                    if(response.Status.code == G_GEO_SUCCESS)
@@ -53,7 +56,15 @@
                    }
                    else{
                     result('0.0','0.0',response.Status.code,'0.0');
-                   }
+                   }*/
+                   
+                   
+                   if (status == google.maps.GeocoderStatus.OK) {
+			         alert("Geocode was  successful : " + status);
+			      } else {
+			        alert("Geocode was not successful for the following reason: " + status);
+			      }
+                   
                }
            );
        }
