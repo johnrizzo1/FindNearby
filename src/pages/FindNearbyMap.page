@@ -576,7 +576,7 @@
         
         //Add a map control
         var mapControl = new GMapTypeControl();
-        map.setCenter(new GLatLng(0, 0), 2);
+        map.setCenter(new google.maps.LatLng(0, 0), 2);
         map.setUIToDefault();
         //map.addControl(mapControl);
         
@@ -624,7 +624,7 @@
         
         this.myIcon = new GIcon(G_DEFAULT_ICON);
         this.whichLetterIcon = String.fromCharCode(this.originalMarker.charCodeAt(0) + (index % 26));
-        this.point = new GLatLng(lat,lon);
+        this.point = new google.maps.LatLng(lat,lon);
         this.DirectionURL = 'http://www.maps.google.com?q='+this.address+'\'/';
         this.mapOption = {icon:this.myIcon};
         

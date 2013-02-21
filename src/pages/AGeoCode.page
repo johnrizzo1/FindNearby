@@ -27,7 +27,7 @@
         var map = null;
         map = new google.maps.Map(document.getElementById('{!$Component.map_div}'));
         geocoder = new google.maps.Geocoder();
-        map.setCenter(new GLatLng(37.4419, -122.1419), 1);
+        map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 1);
         
         
         /*If I have a value keep going*/ 
@@ -45,7 +45,7 @@
                         var accuracy = place.AddressDetails.Accuracy;
                        
                        if(accuracy>=6){
-                         var point = new GLatLng(place.Point.coordinates[1],place.Point.coordinates[0]);
+                         var point = new google.maps.LatLng(place.Point.coordinates[1],place.Point.coordinates[0]);
                          var marker = new GMarker(point);
                          map.setCenter(point, 13);
                          map.addOverlay(marker);
