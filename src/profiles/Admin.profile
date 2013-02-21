@@ -33,81 +33,81 @@
         <apexClass>TestFindNearbyMap</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <fieldLevelSecurities>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.Find_Nearby__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Lat__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Lon__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Mapping_Status__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Which_Address__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.Find_Nearby__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Lat__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Lon__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Mapping_Address__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Mapping_Status__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Do_Not_Map__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Lead.Find_Nearby__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Lat__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Lon__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
-    <fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Mapping_Status__c</field>
-        <hidden>false</hidden>
-    </fieldLevelSecurities>
+        <readable>true</readable>
+    </fieldPermissions>
     <pageAccesses>
         <apexPage>AGeoCode</apexPage>
         <enabled>true</enabled>

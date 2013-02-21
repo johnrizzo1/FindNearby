@@ -8,6 +8,7 @@
     <leftSection>
         <columnSize>Medium</columnSize>
         <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
@@ -24,6 +25,7 @@
             <useReportChart>false</useReportChart>
         </components>
         <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
@@ -43,6 +45,7 @@
     <middleSection>
         <columnSize>Medium</columnSize>
         <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
@@ -59,6 +62,7 @@
             <useReportChart>false</useReportChart>
         </components>
         <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
@@ -78,6 +82,7 @@
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Pie</componentType>
             <displayUnits>Auto</displayUnits>
@@ -94,7 +99,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>iman@chatter-developer.com</runningUser>
+    <runningUser>gasselin@findnearby.org</runningUser>
     <textColor>#000000</textColor>
     <title>Find Nearby Dash</title>
     <titleColor>#000000</titleColor>

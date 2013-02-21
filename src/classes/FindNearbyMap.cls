@@ -40,8 +40,8 @@ public boolean LeadsAvailable,ContactsAvailable,AccountsAvailable;
 
 public boolean getLeadsAvailable(){
 	try{
-		FN__FindNearby__c FNA = FN__FindNearby__c.getOrgDefaults();
-    	LeadsAvailable = FNA.FN__Leads__c;
+		FindNearby__c FNA = FindNearby__c.getOrgDefaults();
+    	LeadsAvailable = FNA.Leads__c;
 	}
 	catch(Exception e){LeadsAvailable=false;}
     
@@ -49,8 +49,8 @@ public boolean getLeadsAvailable(){
 }
 public boolean getContactsAvailable(){
 	try{
-		FN__FindNearby__c FNA = FN__FindNearby__c.getOrgDefaults();
-    	ContactsAvailable = FNA.FN__Contacts__c;
+		FindNearby__c FNA = FindNearby__c.getOrgDefaults();
+    	ContactsAvailable = FNA.Contacts__c;
 	}
 	catch(Exception e){ContactsAvailable=false;}
 	
@@ -58,8 +58,8 @@ public boolean getContactsAvailable(){
 }
 public boolean getAccountsAvailable(){
 	try{
-		FN__FindNearby__c FNA = FN__FindNearby__c.getOrgDefaults();
-    	AccountsAvailable = FNA.FN__Accounts__c;
+		FindNearby__c FNA = FindNearby__c.getOrgDefaults();
+    	AccountsAvailable = FNA.Accounts__c;
 	}
 	catch(Exception e){AccountsAvailable=false;}
     return AccountsAvailable;
